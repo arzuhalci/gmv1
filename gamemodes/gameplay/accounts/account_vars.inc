@@ -16,7 +16,6 @@ enum E_PLAYERS
 	bool: IsLoggedIn,
 	LoginAttempts,
 	LoginTimer,
-	faction_id
 };
 
 new Player[MAX_PLAYERS][E_PLAYERS];

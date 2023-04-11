@@ -51,7 +51,6 @@ forward OnPlayerRegister(playerid);
 public OnPlayerRegister(playerid)
 {
 	Player[playerid][ID] = cache_insert_id();
-	Player[playerid][faction_id] = -1;
 	inline RegCompleted(playerid, response, string:inputtext){
 
 	}
@@ -86,7 +85,6 @@ UpdatePlayerData(playerid, reason)
 AssignPlayerData(playerid)
 {
 	cache_get_value_int(0, "player_id", Player[playerid][ID]);
-	cache_get_value_int(0, "faction_id", Player[playerid][faction_id]);
 
 	cache_get_value_float(0, "x", Player[playerid][X_Pos]);
 	cache_get_value_float(0, "y", Player[playerid][Y_Pos]);

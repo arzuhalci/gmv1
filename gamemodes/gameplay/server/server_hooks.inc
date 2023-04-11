@@ -12,7 +12,6 @@ hook OnGameModeInit(){
 	print("mysql connection succesful");
 
 	SetupPlayerTable();
-    SetupFactionTable();
 }
 
 hook OnGameModeExit()
